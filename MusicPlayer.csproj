@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Backward.png" />
+    <None Remove="Foward.png" />
+    <None Remove="Pause.png" />
+    <None Remove="placeHolder.png" />
+    <None Remove="Play.png" />
+    <None Remove="Volume.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.0.1" />
+    <PackageReference Include="TagLibSharp" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Backward.png" />
+    <Resource Include="Foward.png" />
+    <Resource Include="Pause.png" />
+    <Resource Include="placeHolder.png" />
+    <Resource Include="Play.png" />
+    <Resource Include="Volume.png" />
+  </ItemGroup>
+
+</Project>
