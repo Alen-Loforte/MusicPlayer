@@ -16,25 +16,25 @@ namespace MusicPlayer {
         public MainWindow() {
             InitializeComponent();
         }
-
-        private void Play_Button_Test_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+        private void Play_Button_Click(object sender, RoutedEventArgs e) {
             if (outputDevice == null) { //if no song is playing we open the filebrowser window
-                FileBrowser_Button_Click(sender, e);
+                FileBrowser_Button_Click(sender, null);
             }
-            if (playing) { //while playing == true(if a song is being played) it wont create a new outputDevice
-                outputDevice.Play();//will continue the current song
+            switch (playing) {
+                case true:
+                    outputDevice.Stop();
+                    playing = false;
+                    break;
+                case false:
+                    outputDevice.Play();
+                    playing = true;
+                    break;
             }
         }
 
-        private void PauseButton_Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
-            if(outputDevice != null) {
-                outputDevice.Stop();//will pause the currunt song
-            }
-        }
-
-        private void RewindButton_Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+        private void RewindButton_Click(object sender, RoutedEventArgs e) {
             var currentSelected = ListOfSongs_ListView.SelectedIndex;
-            if (currentSelected != -1) { 
+            if (currentSelected != -1) {
                 if (currentSelected - 1 != -1) {
                     ListOfSongs_ListView.SelectedIndex = currentSelected - 1;
                     NewMusicLoader(pathToFolder + "\\" + ListOfSongs_ListView.Items.GetItemAt(currentSelected - 1));
@@ -42,11 +42,10 @@ namespace MusicPlayer {
             }
         }
 
-        private void FowardButton_Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+        private void FowardButton_Click(object sender, RoutedEventArgs e) {
             var currentSelected = ListOfSongs_ListView.SelectedIndex;
             ListOfSongs_ListView.SelectedIndex = currentSelected + 1;
-            //need to put something here to stop causing a bug
-            if(currentSelected+1 < ListOfSongs_ListView.Items.Count) {
+            if (currentSelected + 1 < ListOfSongs_ListView.Items.Count) {
                 NewMusicLoader(pathToFolder + "\\" + ListOfSongs_ListView.Items.GetItemAt(currentSelected + 1));
             }
         }
@@ -69,12 +68,6 @@ namespace MusicPlayer {
             }
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e) {
-            closing = true;
-            if (outputDevice != null) {
-                outputDevice.Stop();
-            }
-        }
         private void OnPlaybackStopped(object sender, StoppedEventArgs args) {
             //making sure that we release all resources that the program is using
             if (closing) {
@@ -94,7 +87,6 @@ namespace MusicPlayer {
             switch (result) {
                 case System.Windows.Forms.DialogResult.OK: // if we press ok
                     var file = pathDialog.FileName;
-                    MusicPlaying_TextBox.Text = file;
                     outputDevice?.Stop();//we stop the current song
                     NewMusicLoader(file);//function to load a new song
                     UseDefaultVolume();
@@ -112,7 +104,6 @@ namespace MusicPlayer {
             if (outputDevice != null) {
                 outputDevice?.Stop();
             }
-            MusicPlaying_TextBox.Text = pathToSong;
             outputDevice = new WaveOutEvent();
             audioFile = new AudioFileReader(pathToSong);
             outputDevice.Init(audioFile);
@@ -159,6 +150,13 @@ namespace MusicPlayer {
                 NewMusicLoader(pathToFolder + "\\" + selectedSong.ToString());
             }
             
+        }
+        
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e) {
+            closing = true;
+            if (outputDevice != null) {
+                outputDevice.Stop();
+            }
         }
 
     }
