@@ -1,2 +1,2 @@
 # MusicPlayer
- A Music player that i did with C#
+ A music player that i did using C# and a few external libraies
