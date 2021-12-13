@@ -26,3 +26,32 @@ C:\Users\Alen Loforte\Documents\Code\Musicplayer\MusicPlayer\obj\Debug\netcoreap
 C:\Users\Alen Loforte\Documents\Code\Musicplayer\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.dll
 C:\Users\Alen Loforte\Documents\Code\Musicplayer\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.pdb
 C:\Users\Alen Loforte\Documents\Code\Musicplayer\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.genruntimeconfig.cache
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\MusicPlayer.exe
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\MusicPlayer.deps.json
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\MusicPlayer.runtimeconfig.json
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\MusicPlayer.runtimeconfig.dev.json
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\MusicPlayer.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\MusicPlayer.pdb
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.Asio.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.Core.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.Midi.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.Wasapi.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.WinForms.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\NAudio.WinMM.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\bin\Debug\netcoreapp3.1\TagLibSharp.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.csproj.AssemblyReference.cache
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer_MarkupCompile.cache
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer_MarkupCompile.lref
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.g.resources
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.AssemblyInfoInputs.cache
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.AssemblyInfo.cs
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.csproj.CoreCompileInputs.cache
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.csproj.CopyComplete
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.dll
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.pdb
+C:\Users\i_k0niik1\Documents\GitHub\MusicPlayer\obj\Debug\netcoreapp3.1\MusicPlayer.genruntimeconfig.cache
